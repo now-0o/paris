@@ -15,13 +15,83 @@
             position: relative;
         }
 
-        header{ width:250px; height: 100vh;
-            background-color: rgba(255, 255, 255, 0.535);
+        header{ width:250px;
+            background-color: white;
             float:left;
             padding: 20px;
+            margin-bottom: 20px;
         }
-        .header-container{ background-color: green;
+        header h1 {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-size: 0;
+        }
+        .header-container{ 
             height: 100%; width:100%; 
+        }
+        .lnb li {
+            padding: 10px;
+        }
+        .lnb a {
+            display: block;
+            padding: 10px 0;;
+            font-weight: bold;
+            background-image: url(./images/blit_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            border-bottom: 1px solid lightblue;
+        }
+        .lnb a:hover {
+            text-align: center;
+            background-color: rgb(22, 22, 112);
+            color: white;
+            background-image: none;
+        }
+        .lnb {
+            margin-bottom: 20px;
+        }
+        .tell-container {
+            margin-bottom: 20px;
+        }
+        .follow-container,
+        .pbnews-container,
+        .pbevent-container {
+            margin-bottom: 20px;
+        }
+
+        .follow-container h2,
+        .pbnews-container h2,
+        .pbevent-container h2 {
+            font-size: 16px;
+        }
+
+        .follow-container>div,
+        .pbnews-container>div,
+        .pbevent-container>div  {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .pbnews-container li {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 2;
+            font-size: 12px;
+            list-style: disc;
+            background-image: url(./images/blit_list.png);
+            background-repeat: no-repeat;
+            background-position: center left;
+            text-indent: 1.5em;
+        }
+        .pbevent-container {
+            font-size: 12px;
+        }
+
+        .imgCaption span {
+            display: block;
         }
         .follow-list, .product-list{
             display: flex;
@@ -29,9 +99,9 @@
             flex-wrap: wrap;
         }
         section{ margin: 0 300px 0 250px; 
-            height: 100vh;  background-color: pink;
+             background-color: pink;
         }
-        aside{ width:300px; height: 100vh;
+        aside{ width:300px; 
             background-color: white;
             position: absolute;  right:0; top:0;
         }
@@ -125,6 +195,17 @@
                     <div>
                         <h2>PB EVENT</h2>
                         <div class="more"><img src="./images/btn_more.png" alt=""></div>
+                    </div>
+                    <div>
+                        <img src="./images/img_event_01.png" alt="">
+                        <div class="imgCaption">
+                            <span class="captionTitle">파리 진출 1주년 기념!</span>
+                            <span>파리 진출 1주년을 기념하여 해피포인트를 2배 적립해 드립니다.</span>
+                        <img src="./images/img_event_02.png" alt="">
+                        <div class="imgCaption">
+                            <span class="captionTitle">파리 진출 1주년 기념!</span>
+                            <span>파리 진출 1주년을 기념하여 해피포인트를 2배 적립해 드립니다.</span>
+                        </div>
                     </div>
                 </div>
             </div>
