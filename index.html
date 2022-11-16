@@ -99,7 +99,44 @@
             flex-wrap: wrap;
         }
         section{ margin: 0 300px 0 250px; 
-             background-color: pink;
+             background-color: white;
+        }
+        .mainBanner img {
+            width: 100%;
+        }
+        .search-container {
+            padding: 15px;
+            background-color: burlywood;
+            margin-bottom: 20px;
+        }
+        .search-container>div {
+            padding: 15px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        label[for='search'] {
+            display: inline-block;
+            width: 20%;
+        }
+        #search {
+            width: 80%;
+            height: 30px;
+            border-color: burlywood;
+            background-image: url(./images/btn_search.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        .product-container {
+            padding: 15px;
+        }
+        .product-container>div {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-container>div+p {
+            font-size: 12px;
+            margin-bottom: 20px;
         }
         aside{ width:300px; 
             background-color: white;
@@ -211,7 +248,9 @@
             </div>
         </header>
         <section>
-            <div class="mainBanner"></div>
+            <div class="mainBanner">
+                <img src="./images/bn_main.png" alt="">
+            </div>
             <div class="search-container">
                 <div>
                     <label for="search">바게트검색</label>
@@ -222,7 +261,7 @@
                 <div>
                     <h2>PBPRODUCT</h2>
                     <div class="more">
-                        <img src="./images/btn-detail.png" alt="">
+                        <img src="./images/btn_detail.png" alt="">
                     </div>
                 </div>
                 <p>7월 파리바게뜨가 전하는 '이달의 신제품' NEW ARRIVAR</p>
